@@ -1,0 +1,1 @@
+var fk!83&1a*12 = 4;  // shouldn't interpret it as an id
