@@ -1,4 +1,4 @@
-# MiniPL-Interpreter
+# MiniPL Interpreter
 
 A simple C# interpreter for a toy programming language called MiniPL (Mini Pascal Language) implemented as part of the course project for the course "Compilers" at the University of Helsinki
 
@@ -101,8 +101,8 @@ I chose to include only methods and fields that are part of an API of the class,
 
 # Error handling
 For error handling, I store lines and columns of tokens in the token class and then use this information to print error messages. Usually for parser errors I print the token that was expected, as well as the token that was encountered as well as on what line and on what column
-It would also be better to store lines and columns of AST nodes but I didn’t have time to do it.
-It would also be nice to indicate when an error was encountered (at runtime, at compile time, by scanner, by parser, by which visitor). This is pretty simple to do but again I’m bad at time management
+It would also be better to store lines and columns of AST nodes.
+It would also be nice to indicate when an error was encountered (at runtime, at compile time, by scanner, by parser, by which visitor).
 
 # Known Shortcomings
 As I mentioned, currently the code doesn’t say when an error occurred (at compile-time or at run-time). It also doesn’t tell the position of the error when the error happened during type-checking or during interpretation because AST nodes don’t have columns and lines.
