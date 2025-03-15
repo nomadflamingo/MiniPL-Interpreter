@@ -55,7 +55,7 @@ The project doesn’t force the use of `.mpl` extension for MiniPL files and wou
 
 
 # Language specification
-The defaukt language specification can be found in [`doc/MiniPL.pdf`](https://github.com/nomadflamingo/MiniPL-Interpreter/blob/master/doc/MiniPL.pdf). Below are my modifications to it for the purposes of this project.
+The default language specification can be found in [`doc/MiniPL.pdf`](https://github.com/nomadflamingo/MiniPL-Interpreter/blob/master/doc/MiniPL.pdf). Below are my modifications to it for the purposes of this project.
 ## Token patterns
 
 >[!NOTE]
