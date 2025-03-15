@@ -20,17 +20,21 @@ A simple C# interpreter for a toy programming language called MiniPL (Mini Pasca
 
 # How to run
 
-To run the project, clone the repository, build the solution with Visual Studio or `msbuild`. You will then have a `bin/Release/net6.0/interpreter.exe` file. You can use this `.exe` file to execute `.mpl` files, by providing a path to the file to the interpreter like so:
+To run the project, clone the repository, build the solution with Visual Studio or `msbuild`. You will then have a `bin/Release/net6.0/interpreter.exe` file. You can use this `.exe` file to execute `.mpl` files, by providing a path to the file to the interpreter:
 ```
 interpreter.exe “full_path_to_your_file.mpl”
 ```
+The interpreter also supports parsing a directory of scripts:
+```
+interpreter.exe “full_path_to_your_directory”
+```
 Alternatively, you can open the `.csproj` or `.sln` in visual studio (didn’t test on other ides) and click run
 
-The project doesn’t force you to use the .mpl extension and would compile for any other extension without any warnings. 
+The project doesn’t force the use of `.mpl` extension for MiniPL files and would interpret any other extension without any warnings. 
 
 # Project structure
 
-## AST Node hierarchy
+## AST Node Hierarchy
 
 ![image](https://github.com/user-attachments/assets/52e0117d-2025-4319-9ea6-7a64805ecb6c)
 
@@ -51,6 +55,7 @@ The project doesn’t force you to use the .mpl extension and would compile for 
 
 
 # Language specification
+The defaukt language specification can be found in [`doc/MiniPL.pdf`](https://github.com/nomadflamingo/MiniPL-Interpreter/blob/master/doc/MiniPL.pdf). Below are my modifications to it for the purposes of this project.
 ## Token patterns
 
 >[!NOTE]
