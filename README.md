@@ -20,17 +20,39 @@ A simple C# interpreter for a toy programming language called MiniPL (Mini Pasca
 
 # How to run
 
-To run the project, clone the repository, build the solution with Visual Studio or `msbuild`. You will then have a `bin/Release/net6.0/interpreter.exe` file. You can use this `.exe` file to execute `.mpl` files, by providing a path to the file to the interpreter:
+## Installation
+### Windows
+1. Clone the reposistory
+2. Open the `.sln` or `.csproj` in Visual Studio and click "Build Solution"
+3. Navigate to `./bin/Debug/net8.0` and open it in cmd or powershell
+4. Launch the program with `interpreter.exe “full_path_to_your_file.mpl”`.
+
+Alternatively, you can open the `.csproj` or `.sln` in visual studio (didn’t test on other ides) and click run (make sure to provide the arguments)
+
+### Linux
+This approach was not tested, but the installation process for .NET on Linux has been explained in this tutorial: https://learn.microsoft.com/en-us/dotnet/core/install/linux?tabs=netcore2x
+
+After installing, you should be able to invoke msbuild with `dotnet build SocialNetworkGraph.csproj` and launch the executable with `interpreter  “full_path_to_your_file.mpl”`
+
+
+## Launch options
+You can use the interpreter to execute `.mpl` files, by providing a path to the file to the interpreter:
 ```
 interpreter.exe “full_path_to_your_file.mpl”
 ```
-The interpreter also supports parsing a directory of scripts:
+
+The project doesn’t force the use of `.mpl` extension for MiniPL files and would interpret any other extension without any warnings. 
+
+The interpreter also supports parsing a directory of scripts. This is mainly done for automating testing:
 ```
 interpreter.exe “full_path_to_your_directory”
 ```
-Alternatively, you can open the `.csproj` or `.sln` in visual studio (didn’t test on other ides) and click run (make sure to provide the arguments)
 
-The project doesn’t force the use of `.mpl` extension for MiniPL files and would interpret any other extension without any warnings. 
+## Expected output
+When launching the example program defined in `tests/sample prog 3.mpl`, the interpreter should ask the user to input an integer. It will then output the factorial of this integer:
+
+![image](https://github.com/user-attachments/assets/3016a992-5bd1-4b65-8c2d-68f5242653cd)
+
 
 # Project structure
 
