@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "interpreter": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\tetre\\Documents\\mydocs\\study\\sem4\\compilers\\project\\volodymyr_beimuk_proj_2023_03_14\\volodymyr_beimuk_proj_2023_03_14\\tests\\sample prog 3.mpl\""
+    }
+  }
+}
