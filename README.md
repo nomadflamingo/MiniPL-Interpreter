@@ -5,18 +5,23 @@ A simple C# interpreter for a toy programming language called MiniPL (Mini Pasca
 ## Table of contents
 
 1. [How to Run](#how-to-run)
-2. [Project Structure](#project-structure)
+   - [Installation](#installation)
+      - [Windows](#windows)
+      - [Linux](#linux)
+   - [Launch Options](#launch-options)
+   - [Expected Output](#expected-output)
+3. [Project Structure](#project-structure)
    - [AST Node Hierarchy](#ast-node-hierarchy)
    - [Visitors and Symbol Table](#visitors-and-symbol-table)
    - [Tokens Produced by Scanner](#tokens-produced-by-scanner)
    - [Interpreter and Program](#interpreter-and-program)
    - [Scanner and Parser](#scanner-and-parser)
-3. [Language Specification](#language-specification)
+4. [Language Specification](#language-specification)
    - [Token Patterns](#token-patterns)
    - [Modified Context-Free Grammar](#modified-context-free-grammar)
-4. [Testing](#testing)
-5. [Error Handling](#error-handling)
-6. [Known Shortcomings](#known-shortcomings)
+5. [Testing](#testing)
+6. [Error Handling](#error-handling)
+7. [Known Shortcomings](#known-shortcomings)
 
 # How to run
 
@@ -35,7 +40,7 @@ This approach was not tested, but the installation process for .NET on Linux has
 After installing, you should be able to invoke msbuild with `dotnet build SocialNetworkGraph.csproj` and launch the executable with `interpreter  “full_path_to_your_file.mpl”`
 
 
-## Launch options
+## Launch Options
 You can use the interpreter to execute `.mpl` files, by providing a path to the file to the interpreter:
 ```
 interpreter.exe “full_path_to_your_file.mpl”
@@ -48,7 +53,7 @@ The interpreter also supports parsing a directory of scripts. This is mainly don
 interpreter.exe “full_path_to_your_directory”
 ```
 
-## Expected output
+## Expected Output
 When launching the example program defined in `tests/sample prog 3.mpl`, the interpreter should ask the user to input an integer. It will then output the factorial of this integer:
 
 ![image](https://github.com/user-attachments/assets/3016a992-5bd1-4b65-8c2d-68f5242653cd)
