@@ -28,7 +28,7 @@ The interpreter also supports parsing a directory of scripts:
 ```
 interpreter.exe “full_path_to_your_directory”
 ```
-Alternatively, you can open the `.csproj` or `.sln` in visual studio (didn’t test on other ides) and click run
+Alternatively, you can open the `.csproj` or `.sln` in visual studio (didn’t test on other ides) and click run (make sure to provide the arguments)
 
 The project doesn’t force the use of `.mpl` extension for MiniPL files and would interpret any other extension without any warnings. 
 
